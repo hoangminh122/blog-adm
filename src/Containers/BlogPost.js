@@ -3,18 +3,18 @@ import moment from "moment";
 import Markdown from "markdown-to-jsx";
 import readingTime from "reading-time";
 import { GithubSelector, GithubCounter } from "react-reactions";
-import { userClient } from '../Utils/apollo'
+import { userClient } from '../utils/apollo'
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 
 import { config } from "../config";
-import { getEmojiByName, getNameByEmoji } from '../Utils/emoji';
-import { getAuthenticatedUser } from '../Utils/auth'
-import { Loader } from "../Components/Common";
-import { PostContainer, PostTitle, PostDate, PostDateLink, PostReaction, BackButton } from "../Components/Post";
-import { AuthorDetails, AuthorAvatar, AuthorName } from "../Components/Post/Author";
-import { GithubLogin } from '../Components/Header'
-import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
+import { getEmojiByName, getNameByEmoji } from '../utils/emoji';
+import { getAuthenticatedUser } from '../utils/auth'
+import { Loader } from "../components/Common";
+import { PostContainer, PostTitle, PostDate, PostDateLink, PostReaction, BackButton } from "../components/Post";
+import { AuthorDetails, AuthorAvatar, AuthorName } from "../components/Post/Author";
+import { GithubLogin } from '../components/Header'
+import { HyperLink, CodeBlock } from '../components/Markdown/Overrides';
 import CommentsSection from "./CommentsSection";
 
 export default function BlogHome() {

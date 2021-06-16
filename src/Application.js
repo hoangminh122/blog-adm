@@ -4,13 +4,13 @@ import { Helmet } from "react-helmet";
 import { ThemeProvider } from "styled-components";
 
 import { config } from './config'
-import { client } from './Utils/apollo';
+import { client } from './utils/apollo';
 import Router from './Router';
-import GithubCallback from './Containers/GithubCallback';
-import Toggle from "./Components/Theme/Toggler";
-import { GlobalStyles } from "./Components/Theme/GlobalStyles";
-import { lightTheme, darkTheme } from "./Components/Theme/Theme";
-import  { useDarkMode } from "./Components/Theme/useDarkMode";
+import GithubCallback from './containers/GithubCallback';
+import Toggle from "./components/Theme/Toggler";
+import { GlobalStyles } from "./components/Theme/GlobalStyles";
+import { lightTheme, darkTheme } from "./components/Theme/Theme";
+import  { useDarkMode } from "./components/Theme/useDarkMode";
 
 const Application = () => {
   const urlParams = new URLSearchParams(window.location.search);
